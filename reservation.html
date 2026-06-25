@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Hulu Cafe</title>
+    <!-- nanti letak logo dekat website tab -->
+
+    <!-- Bootstrap CSS -->
+    <!-- KALAU JUMPA ANOTHER BOOTSTRAP CAN REPLACE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- NANTI CREATE EXTERNAL CSS FILE -->
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <!-- Logo Hulu -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/hulu-logo.webp" alt="Hulu Cafe Logo" width="150">
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+
+                    <ul class="navbar-nav mx-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="reservation.html">Booking</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="feedback.html">Feedback</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Booking Page Content -->
+    <main id="booking-page">
+
+        <!-- Booking Header -->
+        <section id="booking-intro">
+            <h1>Make a Reservation</h1>
+        </section>
+
+        <!-- Booking Form -->
+        <section id="booking-form-section">
+            <h2>Reservation Details</h2>
+
+            <form id="bookingForm" action="#" method="post">
+
+                <!-- Step 1: Select Pax, Location and Date -->
+                <fieldset>
+                    <legend>Step 1: Select Pax, Location and Date</legend>
+
+                    <p>
+                        <label for="pax">Number of Pax:</label><br>
+                        <select id="pax" name="pax" required>
+                            <option value="">Select number of pax</option>
+                            <option value="1">1 pax</option>
+                            <option value="2">2 pax</option>
+                            <option value="3">3 pax</option>
+                            <option value="4">4 pax</option>
+                            <option value="5">5 pax</option>
+                            <option value="6">6 pax</option>
+                            <option value="7">7 pax</option>
+                            <option value="8">8 pax</option>
+                            <option value="9">9 pax</option>
+                            <option value="10">10 pax</option>
+                            <option value="more-than-10">More than 10 pax</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="location">Location:</label><br>
+                        <select id="location" name="location" required>
+                            <option value="">Select location</option>
+                            <option value="kota-warisan">Hulu Kota Warisan</option>
+                            <option value="taiping">Hulu Taiping</option>
+                            <option value="icity">Hulu I-City, Shah Alam</option>
+                            <option value="putra-heights">Hulu Putra Heights</option> 
+                            <option value="southville">Hulu Southville, Bangi</option>
+                            <option value="nilai">Hulu Nilai</option>
+                            <option value="kajang">Hulu Kajang</option>
+                            <option value="kota-kemuning">Hulu Kota Kemuning</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="reservationDate">Date:</label><br>
+                        <input type="date" id="reservationDate" name="reservationDate" required>
+                    </p>
+                </fieldset>
+
+                <!-- Step 2: Select Available Time -->
+                <fieldset>
+                    <legend>Step 2: Select Available Time</legend>
+
+                    <p>
+                        Please select your preferred reservation time.
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time1000" name="reservationTime" value="10:00 AM" required>
+                        <label for="time1000">10:00 AM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time1030" name="reservationTime" value="10:30 AM">
+                        <label for="time1030">10:30 AM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time1100" name="reservationTime" value="11:00 AM">
+                        <label for="time1100">11:00 AM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time1130" name="reservationTime" value="11:30 AM">
+                        <label for="time1130">11:30 AM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time1200" name="reservationTime" value="12:00 PM">
+                        <label for="time1200">12:00 PM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time1230" name="reservationTime" value="12:30 PM">
+                        <label for="time1230">12:30 PM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time1300" name="reservationTime" value="1:00 PM">
+                        <label for="time1300">1:00 PM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time1330" name="reservationTime" value="1:30 PM">
+                        <label for="time1330">1:30 PM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time1400" name="reservationTime" value="2:00 PM">
+                        <label for="time1400">2:00 PM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time1430" name="reservationTime" value="2:30 PM">
+                        <label for="time1430">2:30 PM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time1500" name="reservationTime" value="3:00 PM">
+                        <label for="time1500">3:00 PM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time1530" name="reservationTime" value="3:30 PM">
+                        <label for="time1530">3:30 PM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time1600" name="reservationTime" value="4:00 PM">
+                        <label for="time1600">4:00 PM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time1630" name="reservationTime" value="4:30 PM">
+                        <label for="time1630">4:30 PM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time1700" name="reservationTime" value="5:00 PM">
+                        <label for="time1700">5:00 PM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time1730" name="reservationTime" value="5:30 PM">
+                        <label for="time1730">5:30 PM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time1800" name="reservationTime" value="6:00 PM">
+                        <label for="time1800">6:00 PM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time1830" name="reservationTime" value="6:30 PM">
+                        <label for="time1830">6:30 PM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time1900" name="reservationTime" value="7:00 PM">
+                        <label for="time1900">7:00 PM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time1930" name="reservationTime" value="7:30 PM">
+                        <label for="time1930">7:30 PM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time2000" name="reservationTime" value="8:00 PM">
+                        <label for="time2000">8:00 PM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time2030" name="reservationTime" value="8:30 PM">
+                        <label for="time2030">8:30 PM</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="time2100" name="reservationTime" value="9:00 PM">
+                        <label for="time2100">9:00 PM</label>
+                    </p>
+                </fieldset>
+
+                <!-- Step 3: Customer Details -->
+                <fieldset>
+                    <legend>Step 3: Customer Details</legend>
+
+                    <p>
+                        <label for="fullName">Full Name:</label><br>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                    </p>
+
+                    <p>
+                        <label for="phoneNumber">Phone Number:</label><br>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Example: 0123456789" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </p>
+                </fieldset>
+
+                <!-- Step 4: Notes -->
+                <fieldset>
+                    <legend>Step 4: Notes</legend>
+
+                    <p>
+                        <label for="notes">Additional Notes:</label><br>
+                        <textarea id="notes" name="notes" rows="5" cols="50"
+                            placeholder="Example: Need plug point, birthday setup, baby chair, quiet corner, etc."></textarea>
+                    </p>
+                </fieldset>
+
+                <!-- Step 5: Confirmation -->
+                <fieldset>
+                    <legend>Step 5: Confirmation</legend>
+
+                    <p>
+                        <input type="checkbox" id="confirmDetails" name="confirmDetails" required>
+                        <label for="confirmDetails">
+                            I confirm that all reservation details are correct.
+                        </label>
+                    </p>
+
+                    <p>
+                        <button type="submit">Confirm Reservation</button>
+                        <button type="reset">Reset</button>
+                    </p>
+                </fieldset>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Social Media -->
+    <!-- NANTI TUKAR THE TEXT INTO ICONS -->
+    <section id="social-media">
+        <div class="container text-center">
+            <h2>Follow Us</h2>
+            <a href="https://www.instagram.com/hulu.cafe?igsh=eWtpYXlsdXlkNWw0">Instagram</a> |
+            <a href="https://www.tiktok.com/@hulucafe?_r=1&_t=ZS-97VaHqR7eXw">TikTok</a> |
+            <a href="https://www.facebook.com/share/1L4NBa9q2Z/">Facebook</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>
+                © 2026 Hulu Cafe. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<!-- JS: 1) show available time slots based on selected date and location
+         2) prevent double booking
+         3) show confirmation message 
+         4) validate form inputs 
+         5) display confirmation details -->

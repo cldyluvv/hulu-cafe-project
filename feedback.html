@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | Hulu Cafe</title>
+    <!-- nanti letak logo dekat website tab -->
+
+    <!-- Bootstrap CSS -->
+    <!-- KALAU JUMPA ANOTHER BOOTSTRAP CAN REPLACE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- NANTI CREATE EXTERNAL CSS FILE -->
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <!-- Logo Hulu -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/hulu-logo.webp" alt="Hulu Cafe Logo" width="150">
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+
+                    <ul class="navbar-nav mx-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservation.html">Booking</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="feedback.html">Feedback</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Feedback Page Content -->
+    <main id="feedback-page">
+
+        <!-- Feedback Header -->
+        <section id="feedback-intro">
+            <h1>Feedback & Reviews</h1>
+
+            <p>
+                We value your opinion. Share your experience at Hulu Cafe and help us
+                improve our food, drinks, service and cafe environment.
+            </p>
+        </section>
+
+        <!-- Feedback Form Section -->
+        <section id="feedback-form-section">
+
+            <h2>Leave Your Feedback</h2>
+
+            <form id="feedbackForm" action="#" method="post">
+
+                <!-- Customer Information -->
+                <fieldset>
+                    <legend>Customer Information</legend>
+
+                    <p>
+                        <label for="customerName">Name:</label><br>
+                        <input type="text" id="customerName" name="customerName" placeholder="Enter your name" required>
+                    </p>
+
+                    <p>
+                        <label for="customerEmail">Email:</label><br>
+                        <input type="email" id="customerEmail" name="customerEmail" placeholder="Enter your email" required>
+                    </p>
+
+                    <p>
+                        <label for="visitedBranch">Visited Branch:</label><br>
+                        <select id="visitedBranch" name="visitedBranch" required>
+                            <option value="">-- Select Branch --</option>
+                            <option value="klang">Hulu Cafe Klang</option>
+                            <option value="icity">Hulu Cafe I-City, Shah Alam</option>
+                            <option value="southville">Hulu Cafe Southville, Bangi</option>
+                            <option value="nilai">Hulu Cafe Nilai</option>
+                            <option value="sg-besi">Hulu Cafe Sg. Besi</option>
+                            <option value="branch-six">Hulu Cafe Branch 6</option>
+                            <option value="branch-seven">Hulu Cafe Branch 7</option>
+                            <option value="branch-eight">Hulu Cafe Branch 8</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <!-- Rating Section -->
+                <fieldset>
+                    <legend>Rating</legend>
+
+                    <p>Please rate your overall experience:</p>
+
+                    <div id="star-rating">
+
+                        <input type="radio" id="star5" name="rating" value="5" required>
+                        <label for="star5">★</label>
+
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4">★</label>
+
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3">★</label>
+
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2">★</label>
+
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1">★</label>
+
+                    </div>
+                </fieldset>
+
+                <!-- Feedback Category -->
+                <fieldset>
+                    <legend>Feedback Category</legend>
+
+                    <p>
+                        <label for="feedbackCategory">What is your feedback about?</label><br>
+                        <select id="feedbackCategory" name="feedbackCategory" required>
+                            <option value="">-- Select Category --</option>
+                            <option value="food">Food</option>
+                            <option value="drinks">Drinks</option>
+                            <option value="service">Customer Service</option>
+                            <option value="environment">Cafe Environment</option>
+                            <option value="reservation">Reservation Experience</option>
+                            <option value="website">Website Experience</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <!-- Feedback Message -->
+                <fieldset>
+                    <legend>Your Feedback</legend>
+
+                    <p>
+                        <label for="feedbackMessage">Feedback Message:</label><br>
+                        <textarea id="feedbackMessage" name="feedbackMessage" rows="6" cols="60"
+                            placeholder="Write your feedback here..." required></textarea>
+                    </p>
+
+                    <p>
+                        <label for="suggestion">Suggestion for Improvement:</label><br>
+                        <textarea id="suggestion" name="suggestion" rows="5" cols="60"
+                            placeholder="Write your suggestion here..."></textarea>
+                    </p>
+                </fieldset>
+
+                <!-- Permission -->
+                <fieldset>
+                    <legend>Permission</legend>
+
+                    <p>
+                        <input type="checkbox" id="displayReview" name="displayReview" value="yes">
+                        <label for="displayReview">
+                            I allow Hulu Cafe to display my review on this website.
+                        </label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="confirmFeedback" name="confirmFeedback" required>
+                        <label for="confirmFeedback">
+                            I confirm that the feedback provided is true and based on my experience.
+                        </label>
+                    </p>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <p>
+                    <button type="submit">Submit Feedback</button>
+                    <button type="reset">Reset Form</button>
+                </p>
+
+            </form>
+        </section>
+
+        <!-- Review Section -->
+        <section id="review-section">
+
+            <h2>Customer Reviews</h2>
+
+            <p>
+                Read what customers say about their experience at Hulu Cafe.
+            </p>
+
+            <!-- Review 1 -->
+            <section class="review-box">
+                <h3>Aisyah</h3>
+
+                <p>
+                    <strong>Branch:</strong> Hulu Cafe I-City, Shah Alam
+                </p>
+
+                <p>
+                    <strong>Rating:</strong> ★★★★★
+                </p>
+
+                <p>
+                    <strong>Review:</strong>
+                    The matcha latte was very smooth and delicious. The environment was also
+                    comfortable for studying.
+                </p>
+            </section>
+
+            <!-- Review 2 -->
+            <section class="review-box">
+                <h3>Daniel</h3>
+
+                <p>
+                    <strong>Branch:</strong> Hulu Cafe Klang
+                </p>
+
+                <p>
+                    <strong>Rating:</strong> ★★★★☆
+                </p>
+
+                <p>
+                    <strong>Review:</strong>
+                    Good food and friendly staff. The pasta was nice and the cafe interior
+                    looked aesthetic.
+                </p>
+            </section>
+
+            <!-- Review 3 -->
+            <section class="review-box">
+                <h3>Nurul</h3>
+
+                <p>
+                    <strong>Branch:</strong> Hulu Cafe Nilai
+                </p>
+
+                <p>
+                    <strong>Rating:</strong> ★★★★★
+                </p>
+
+                <p>
+                    <strong>Review:</strong>
+                    I love the calm atmosphere and the desserts. The cafe is suitable for
+                    hanging out with friends.
+                </p>
+            </section>
+
+            <!-- Review 4 -->
+            <section class="review-box">
+                <h3>Imran</h3>
+
+                <p>
+                    <strong>Branch:</strong> Hulu Cafe Southville, Bangi
+                </p>
+
+                <p>
+                    <strong>Rating:</strong> ★★★★☆
+                </p>
+
+                <p>
+                    <strong>Review:</strong>
+                    The service was good and the menu had many choices. Booking through the
+                    website makes the process easier.
+                </p>
+            </section>
+
+            <!-- Review 5 -->
+            <section class="review-box">
+                <h3>Sofia</h3>
+
+                <p>
+                    <strong>Branch:</strong> Hulu Cafe Sg. Besi
+                </p>
+
+                <p>
+                    <strong>Rating:</strong> ★★★★★
+                </p>
+
+                <p>
+                    <strong>Review:</strong>
+                    The matcha desserts were amazing. I would recommend this cafe to matcha
+                    lovers.
+                </p>
+            </section>
+
+        </section>
+
+    </main>
+
+    <!-- Social Media -->
+    <!-- NANTI TUKAR THE TEXT INTO ICONS -->
+    <section id="social-media">
+        <div class="container text-center">
+            <h2>Follow Us</h2>
+            <a href="https://www.instagram.com/hulu.cafe?igsh=eWtpYXlsdXlkNWw0">Instagram</a> |
+            <a href="https://www.tiktok.com/@hulucafe?_r=1&_t=ZS-97VaHqR7eXw">TikTok</a> |
+            <a href="https://www.facebook.com/share/1L4NBa9q2Z/">Facebook</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>
+                © 2026 Hulu Cafe. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<!-- JS: make sure to display reviews
+         make the star ratings interactive in the feedback form-->
+ <!-- makesure JS siapkan part baru design boleh buat part review-->
