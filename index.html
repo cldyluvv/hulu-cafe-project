@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu | Hulu Cafe</title>
+    <title>HULU CAFE</title>
     <!--nanti letak logo dekat website tab-->
 
     <!--Bootstrap CSS--> <!--KALAU JUMPA ANOTHER BOOTSRAP CAN REPLACE-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!--NANTI CREATE EXTERNAL CSS FILE-->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -21,7 +23,7 @@
             <div class="container">
 
                 <!--Logo Hulu--> <!--KITA TUKAR LOGO LETAK DEKAT KIRI INSTEAD OF TENGAH-->
-                <a class="navbar-brand" href="#"><img src="images/hulu-logo.webp" alt="Hulu Cafe Logo" width="150"></a>
+                <a class="navbar-brand" href="#"><img src="images/hulu-logo.webp" alt="Hulu Cafe Logo"></a>
 
                 <button class="navbar-toggler" type="button"
                     data-bs-toggle="collapse"
@@ -65,25 +67,67 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="hero">
-        <div class="container text-center">
+    <section id="hero"> 
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"> 
+    
+    <!-- Indicators -->
+    
+    <div class="carousel-indicators"> 
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button> 
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button> 
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button> 
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button> 
+    </div> 
+    
+    <!-- Slides --> 
+    <div class="carousel-inner">
 
-            <h1>Welcome to Hulu Cafe</h1>
-
-            <p>
-                Experience premium matcha, handcrafted beverages,
-                delicious meals and a cozy atmosphere.
-            </p>
-
-            <a href="menu.html" class="btn btn-success">
-                View Menu
-            </a>
-
-            <a href="reservation.html" class="btn btn-outline-dark">
-                Book Now
-            </a>
-
-        </div>
+    <!-- Slide 1 --> 
+    <div class="carousel-item active" data-bs-interval="4000">
+        <img src="images/hero1.jpg" class="d-block w-100" alt=""> 
+        
+    <div class="hero-content"> 
+        
+    <h1>Welcome to Hulu Cafe</h1> 
+    <p> Experience premium matcha, handcrafted beverages, delicious meals and a cozy atmosphere. </p> 
+    
+    <a href="menu.html" class="btn btn-success"> View Menu </a>
+    <a href="reservation.html" class="btn btn-outline-light"> Book Now </a> 
+    </div>
+    </div> 
+    
+    <!-- Slide 2 --> 
+    
+    <div class="carousel-item" data-bs-interval="4000"> 
+        <img src="images/hero2.jpg" class="d-block w-100" alt=""> 
+    </div> 
+    
+    <!-- Slide 3 --> 
+    <div class="carousel-item" data-bs-interval="4000"> 
+        <img src="images/hero3.jpg" class="d-block w-100" alt=""> 
+    </div> 
+    
+    <!-- Slide 4 --> 
+    <div class="carousel-item" data-bs-interval="4000"> 
+        <img src="images/hero4.jpg" class="d-block w-100" alt=""> 
+    </div> 
+    
+    <!-- Slide 5 --> 
+    <div class="carousel-item" data-bs-interval="4000"> 
+        <img src="images/hero5.jpg" class="d-block w-100" alt=""> 
+    </div> </div> 
+    
+    <!-- Previous --> 
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span> 
+    </button> 
+    
+    <!-- Next --> 
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next"> 
+        <span class="carousel-control-next-icon"></span> 
+    </button> 
+    </div> 
     </section>
 
     <!-- Featured Menu -->
@@ -97,6 +141,7 @@
             <div class="row">
 
                 <div class="col-md-4">
+                    <a href="menu.html#matcha" class="card-link">
                     <div class="card">
                         <img src="images/Beverages/rikyu-matcha-misu-2.0.webp"
                              class="card-img-top"
@@ -109,9 +154,11 @@
                             </p>
                         </div>
                     </div>
+                    </a>
                 </div>
 
                 <div class="col-md-4">
+                    <a href="menu.html#pastry" class="card-link">
                     <div class="card">
                         <img src="images/Pastry/signature-rikyu-matcha-croissant.webp"
                              class="card-img-top"
@@ -124,9 +171,11 @@
                             </p>
                         </div>
                     </div>
+                    </a>
                 </div>
 
                 <div class="col-md-4">
+                    <a href="menu.html#pasta" class="card-link">
                     <div class="card">
                         <img src="images/Pasta/italian-truffle-carbonara-shrooms.webp"
                              class="card-img-top"
@@ -139,6 +188,7 @@
                             </p>
                         </div>
                     </div>
+                    </a>
                 </div>
 
             </div>
@@ -159,29 +209,40 @@
     </section>
 
     <!-- About Preview -->
-    <section id="about-preview">
-        <div class="container text-center">
+    <section id="about-preview" class="about-bg">
+        <div class="container text-center about-content">
 
             <h2>Why Hulu Cafe?</h2>
 
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Hulu Cafe is a cozy modern café that brings together premium matcha drinks, freshly baked pastries, and comforting meals in a relaxing atmosphere.
+                Every item on our menu is carefully prepared using high-quality ingredients to ensure the best taste in every bite and sip. 
+                Whether you are here to study, catch up with friends, or simply unwind, Hulu Cafe offers the perfect space for every moment. 
             </p>
 
         </div>
     </section>
 
     <!--Social Media--> <!--NANTI TUKAR THE TEXT INTO ICONS-->
-    <section id="social-media">
-        <div class="container text-center">
-            <h2>Follow Us</h2>
-            <a href="https://www.instagram.com/hulu.cafe?igsh=eWtpYXlsdXlkNWw0">Instagram</a> |
-            <a href="https://www.tiktok.com/@hulucafe?_r=1&_t=ZS-97VaHqR7eXw">TikTok</a> |
-            <a href="https://www.facebook.com/share/1L4NBa9q2Z/">Facebook</a>
-        </div>
-    </section>
+<section id="social-media">
 
+    <div class="container text-center">
+        <h2>Follow Us</h2>
+        <a href="https://www.instagram.com/hulu.cafe?igsh=eWtpYXlsdXlkNWw0">
+            <i class="bi bi-instagram"></i>
+        </a>
+        
+        <a href="https://www.tiktok.com/@hulucafe?_r=1&_t=ZS-97VaHqR7eXw">
+            <i class="bi bi-tiktok"></i>
+        </a>
+        
+        <a href="https://www.facebook.com/share/1L4NBa9q2Z/">
+            <i class="bi bi-facebook"></i>
+        </a>
+    
+    </div>
+
+</section>
     <!-- Footer -->
     <footer>
         <div class="container text-center">
@@ -191,5 +252,6 @@
         </div>
     </footer>
 
+    
 </body>
 </html>

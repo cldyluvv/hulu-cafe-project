@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#FCFCFA;
+    color:#333;
+    line-height:1.7;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background:#4A3728;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    min-height:130px;
+    padding:18px 0;
+    box-shadow:0 4px 14px rgba(0,0,0,.08);
+}
+
+.navbar-brand{
+    position: absolute;
+    left: 25px;   
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.navbar-brand img{
+    width:150px;
+}
+
+.navbar-collapse{
+    justify-content:center;
+}
+
+.nav-link{
+    color:#fff;
+    font-size:20px;
+    margin:0 12px;
+    font-weight:500;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    color:#D4A373 !important;
+}
+
+/* MAIN */
+
+#menu-page{
+    margin-top:160px;
+}
+
+/* MENU LAYOUT */
+
+#menu-layout{
+    display:flex;
+    gap:30px;
+    max-width:1400px;
+    margin:auto;
+    padding:30px;
+}
+
+/* SIDEBAR */
+
+#menu-category{
+    width:250px;
+    position:sticky;
+    top:160px;
+    height:fit-content;
+
+    background:white;
+    border-radius:18px;
+    padding:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+#menu-category h2{
+    text-align:center;
+    color:#4A3728;
+    margin-bottom:20px;
+}
+
+#menu-category ul{
+    list-style:none;
+}
+
+#menu-category li{
+    margin:12px 0;
+}
+
+#menu-category a{
+    text-decoration:none;
+    color:#555;
+    transition:.3s;
+}
+
+#menu-category a:hover{
+    color:#8B5E3C;
+    padding-left:8px;
+}
+
+/* CONTENT */
+
+#menu-content{
+    flex:1;
+}
+
+/* SEARCH */
+
+#menu-search{
+    margin-bottom:40px;
+}
+
+#menu-search label{
+    display:block;
+    margin-bottom:10px;
+    font-weight:600;
+}
+
+#menu-search input{
+    width:100%;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:30px;
+    outline:none;
+    font-size:16px;
+}
+
+#menu-search input:focus{
+    border-color:#8B5E3C;
+}
+
+/* MENU SECTION */
+
+.menu-section{
+    margin-bottom:70px;
+}
+
+.menu-section h2{
+    color:#4A3728;
+    margin-bottom:30px;
+    border-left:6px solid #D4A373;
+    padding-left:15px;
+}
+
+/* MENU TABLE */
+
+.menu-table{
+    width:100%;
+    border-collapse:separate;
+    border-spacing:20px;
+}
+
+.menu-table td{
+    width:33%;
+    background:#fff;
+    border-radius:18px;
+    padding:20px;
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.menu-table td:hover{
+    transform:translateY(-5px);
+}
+
+.menu-table img{
+    width:170px;
+    height:170px;
+    object-fit:cover;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+.menu-table h3{
+    font-size:18px;
+    color:#3E2723;
+    margin-bottom:10px;
+}
+
+.menu-table p{
+    color:#666;
+    font-weight:500;
+}
+
+.menu-table span{
+    display:inline-block;
+    margin-left:8px;
+    background:#D4A373;
+    color:white;
+    padding:3px 10px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+/* SOCIAL MEDIA*/
+
+#social-media{
+    background:#F5F5F3;
+    padding:45px 20px;
+    text-align:center;
+}
+
+#social-media h2{
+    color:#4A3728;
+    margin-bottom:15px;
+}
+
+#social-media a{
+    color:#8B5E3C;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    width:50px;
+    height:50px;
+
+    margin:0 8px;
+
+    border-radius:50%;
+    background:#402804;
+    color:#fff;
+
+    font-size:22px;
+
+    text-decoration:none;
+    transition:.3s;
+}
+
+#social-media a:hover{
+    color:#4A3728;
+    transform:translateY(-3px);
+}
+
+/* FOOTER*/
+
+footer{
+    background:#4A3728;
+    color:white;
+    padding:20px;
+}
+
+footer p{
+    margin:0;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+#menu-layout{
+    flex-direction:column;
+}
+
+#menu-category{
+    width:100%;
+    position:relative;
+    top:0;
+}
+
+.menu-table,
+.menu-table tbody,
+.menu-table tr,
+.menu-table td{
+    display:block;
+    width:100%;
+}
+
+.menu-table td{
+    margin-bottom:20px;
+}
+
+}
