@@ -27,7 +27,7 @@ section{
 
 /* NAVBAR */
 .navbar{
-    background:#51402a;
+    background:#9f9588;
     position:fixed;
     top:0;
     left:0;
@@ -53,7 +53,7 @@ section{
 
 .nav-link:hover,
 .nav-link.active{
-    color:#aa9c89 !important;
+    color:#5b3b0c !important;
 }
 
 .navbar .container{
