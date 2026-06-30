@@ -10,8 +10,10 @@
     <!-- Bootstrap CSS -->
     <!-- KALAU JUMPA ANOTHER BOOTSTRAP CAN REPLACE OR ADD-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/gallery.css">
 
-    <!-- NANTI CREATE EXTERNAL CSS FILE -->
+
 </head>
 
 <body>
@@ -68,18 +70,158 @@
     </header>
 
     <main>
-    </main>
+
+        
+
+    <!-- Hero Image -->
+    <section class="gallery-hero">
+
+    <div class="hero-text">
+        <p class="small-title">Hulu Cafe Gallery</p>
+        <h1 id="heroTitle">Explore<br>Hulu<br>Moments</h1>
+        <p id="heroDesc" class="hero-desc">
+            A cozy collection of crafted drinks, pastries and warm memories.
+        </p>
+    </div>
+
+    <div class="hero-cards">
+
+        <article class="hero-card active"
+            data-title="Matcha Bloom"
+            data-desc="A calm sip of matcha, made for slow afternoons.">
+            <img src="images/Wimage/matcha1-gallery.jpg" alt="Matcha drink">
+            <h3>Matcha Bloom</h3>
+        </article>
+
+        <article class="hero-card"
+            data-title="Golden Pastry"
+            data-desc="Freshly baked treats with a soft, buttery finish.">
+            <img src="images/Wimage/pastry1-gallery.jpg" alt="Pastry">
+            <h3>Golden Pastry</h3>
+        </article>
+
+        <article class="hero-card"
+            data-title="Cozy Corner"
+            data-desc="A warm space to pause, gather and enjoy the little things.">
+            <img src="images/Wimage/cozy-gallery.jpg" alt="Cafe interior">
+            <h3>Cozy Corner</h3>
+        </article>
+
+        <article class="hero-card"
+            data-title="Sweet Layers"
+            data-desc="Delicate desserts crafted for beautiful cafe moments.">
+            <img src="images/Wimage/cake1-gallery.jpg" alt="Dessert">
+            <h3>Sweet Layers</h3>
+        </article>
+
+    </div>
+
+</section>
+
+    <!-- Gallery Images -->
+    <section class="gallery-section">
+
+        <!-- Image decoration left side -->
+        <img src="images/Wimage/matcha-crop.webp" class="floating-food food-left" alt="Food decoration">
+
+        <div class="container">
+
+            <h2>Our Beautiful Moments</h2>
+            <p class="gallery-desc">A little collection of our favourite cafe scenes.</p>
+
+                        <div class="slider-gallery">
+
+                <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+
+                <div class="slider-track">
+
+                    <div class="slide-card">
+                        <video autoplay muted loop playsinline>
+                            <source src="images/Wimage/matcha-video.MP4" type="video/mp4">
+                        </video>
+                        <h3>Matcha Moment</h3>
+                    </div>
+
+                    <div class="slide-card">
+                        <video autoplay muted loop playsinline>
+                            <source src="images/Wimage/pastry-video.MP4" type="video/mp4">
+                        </video>
+                        <h3>Fresh Pastry</h3>
+                    </div>
+
+                    <div class="slide-card">
+                       <video autoplay muted loop playsinline>
+                            <source src="images/Wimage/interior-video.MP4" type="video/mp4">
+                        </video>
+                        <h3>Cozy Corner</h3>
+                   </div>
+
+                    <div class="slide-card">
+                        <video autoplay muted loop playsinline>
+                            <source src="images/Wimage/dessert-video.MP4" type="video/mp4">
+                        </video>
+                        <h3>Sweet Dessert</h3>
+                    </div>
+
+                    <div class="slide-card">
+                        <video autoplay muted loop playsinline>
+                            <source src="images/Wimage/coffee-video.MP4" type="video/mp4">
+                        </video>
+                        <h3>Coffee Time</h3>
+                    </div>
+
+                </div>
+
+                <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+
+            </div>
+
+            <p class="moving-text">Hulu Cafe Moments • Matcha • Pastry • Coffee • Cozy Space •</p>
+
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+
+        <!-- Image decoration right side  -->
+        <img src="images/Wimage/spaghetti-crop.webp" class="floating-food food-right" alt="Food decoration">
+
+        <h2>Watch Our Story</h2>
+
+        <div class="video-box">
+            <video autoplay muted loop playsinline controls>
+                <source src="images/Wimage/video-gallery.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </section>
+
+</main>
 
     <!-- Social Media -->
     <!-- NANTI TUKAR THE TEXT INTO ICONS -->
     <section id="social-media">
-        <div class="container text-center">
-            <h2>Follow Us</h2>
-            <a href="https://www.instagram.com/hulu.cafe?igsh=eWtpYXlsdXlkNWw0">Instagram</a> |
-            <a href="https://www.tiktok.com/@hulucafe?_r=1&_t=ZS-97VaHqR7eXw">TikTok</a> |
-            <a href="https://www.facebook.com/share/1L4NBa9q2Z/">Facebook</a>
-        </div>
-    </section>
+
+    <div class="container text-center">
+
+        <h2>Follow Us</h2>
+
+        <a href="https://www.instagram.com/hulu.cafe?igsh=eWtpYXlsdXlkNWw0">
+            <i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/@hulucafe?_r=1&_t=ZS-97VaHqR7eXw">
+            <i class="bi bi-tiktok"></i>
+        </a>
+
+        <a href="https://www.facebook.com/share/1L4NBa9q2Z/">
+            <i class="bi bi-facebook"></i>
+        </a>
+
+    </div>
+
+</section>
 
     <!-- Footer -->
     <footer>
@@ -89,6 +231,8 @@
             </p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/gallery.js"></script>
 
 </body>
 </html>
