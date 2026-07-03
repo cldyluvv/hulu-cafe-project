@@ -10,17 +10,17 @@ html{
     scroll-behavior:smooth;
 }
 
-body{
-    font-family:'Poppins',sans-serif;
-    background:#FCFCFA;
-    color:#333;
-    line-height:1.7;
+body {
+    background-color: #EDE3D6;
+    color: #402804;
+    font-family: Arial, Verdana, sans-serif;
 }
 
 /* NAVBAR */
 
 .navbar{
-    background:#4A3728;
+
+    background:#9f9588;
     position:fixed;
     top:0;
     left:0;
@@ -48,15 +48,20 @@ body{
 }
 
 .nav-link{
-    color:#fff;
+    color:#000000;
     font-size:20px;
-    margin:0 12px;
     font-weight:500;
+    margin:0 16px;
+    transition:.3s;
 }
 
 .nav-link:hover,
 .nav-link.active{
-    color:#D4A373 !important;
+    color:#5b3b0c  !important;
+}
+
+.navbar .container{
+    position:relative;
 }
 
 /* MAIN */
