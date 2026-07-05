@@ -20,11 +20,8 @@ body {
     font-family: "Playfair Display", serif;
     font-weight: 700;
 }
-
-/* NAVBAR*/
-
+/* NAVBAR */
 .navbar{
-    background:#51402a;
     background:#9f9588;
     position:fixed;
     top:0;
@@ -36,16 +33,10 @@ body {
     box-shadow:0 4px 14px rgba(0,0,0,.08);
 }
 
-
 .navbar-brand img{
     height:auto;
-    width: 150px;
-    display: block;
-    transition:.3s;
-}
-
-.navbar-brand img:hover{
-    transform:scale(1.05);
+    width: 150px;;
+    display:block;
 }
 
 .nav-link{
@@ -53,13 +44,11 @@ body {
     font-size:20px;
     font-weight:500;
     margin:0 16px;
-    transition:.3s;
 }
 
 .nav-link:hover,
 .nav-link.active{
-    color:#aa9c89 !important;
-    color:#5b3b0c  !important;
+    color:#5b3b0c !important;
 }
 
 .navbar .container{
@@ -67,11 +56,11 @@ body {
 }
 
 .navbar-brand{
-    position: absolute;
-    left: 0px;   
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
+    position:absolute;
+    left:0;
+    display:flex;
+    align-items:center;
+    padding:10px 0;
 }
 
 .navbar-collapse{
@@ -82,18 +71,6 @@ body {
     margin:0 auto;
     align-items:center;
     padding:15px 0;
-}
-
-.navbar-toggler{
-    border:2px solid white;
-}
-
-.navbar-toggler:focus{
-    box-shadow:none;
-}
-
-.navbar-toggler-icon{
-    filter:brightness(0) invert(1);
 }
 
 /* HERO  */

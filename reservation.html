@@ -19,25 +19,31 @@
 
 <body>
 
+
     <!-- Nav Bar -->
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
 
-                <!-- Logo Hulu -->
+                <!-- Logo on the left -->
                 <a class="navbar-brand" href="index.html">
                     <img src="images/hulu-logo.webp" alt="Hulu Cafe Logo" width="150">
                 </a>
 
-                <button class="navbar-toggler" type="button"
+                <!-- Burger button on the right -->
+                <button class="navbar-toggler ms-auto" type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#navbarMenu">
+                    data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                <!-- Navigation links inside burger -->
                 <div class="collapse navbar-collapse" id="navbarMenu">
-
-                    <ul class="navbar-nav mx-auto">
+                    <ul class="navbar-nav ms-auto">
 
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
@@ -48,7 +54,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="reservation.html">Booking</a>
+                            <a class="nav-link active" href="booking.html">Booking</a>
                         </li>
 
                         <li class="nav-item">
@@ -64,8 +70,8 @@
                         </li>
 
                     </ul>
-
                 </div>
+
             </div>
         </nav>
     </header>
