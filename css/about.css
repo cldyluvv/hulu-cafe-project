@@ -17,6 +17,11 @@ body{
     padding-top:130px;
 }
 
+#about-hulu{
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+}
+
 h1,h2,h3{
     font-weight:700;
 }

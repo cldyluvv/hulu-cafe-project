@@ -93,7 +93,7 @@ body{
 
 #feedback-form-section,
 #review-section{
-    background:#776544;
+    background:#c6b698a2;
     border: 2px solid #d7b46a;
     border-radius: 20px;
     padding: 30px;
@@ -109,7 +109,7 @@ body{
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 25px;
-    color: #59503a;
+    color: #393325;
 }
 
 #feedback-intro,
@@ -124,16 +124,15 @@ body{
 #review-section:hover{
 
     transform:translateY(-6px);
-
     transition:.4s;
-
     box-shadow:
     0 0 18px rgba(7, 7, 6, 0.6),
     0 0 35px rgba(212,160,23,.3);
 }
 
-fieldset{
-    border: 1px solid #cbb89d;
+fieldset {
+    background-color: #dbcdb36d;
+    border: 1px solid #d7b46a;
     border-radius: 12px;
     padding: 20px;
     margin-bottom: 20px;
@@ -174,7 +173,7 @@ input[type="checkbox"]{
 
 #star-rating label{
     font-size: 35px;
-    color: #ccc;
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -185,16 +184,12 @@ input[type="checkbox"]{
 }
 
 button{
-    background-color: #6b4f3f;
+    background-color: #4a392e;
     color: white;
     border: none;
     padding: 12px 25px;
     border-radius: 25px;
     margin-right: 10px;
-}
-
-button:hover{
-    background-color: #8b5e34;
 }
 
 #reviewCarousel{
