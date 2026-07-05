@@ -33,7 +33,7 @@ body {
 
 .navbar-brand{
     position: absolute;
-    left: 25px;   
+    left: 0px;   
     display: flex;
     align-items: center;
     padding: 10px 0;
