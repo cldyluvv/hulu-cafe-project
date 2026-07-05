@@ -16,6 +16,11 @@ body {
     font-family: Arial, Verdana, sans-serif;
 }
 
+#welcome-word {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+}
+
 /* NAVBAR*/
 
 .navbar{
@@ -122,7 +127,7 @@ body {
 
 .hero-content{
     position:absolute;
-    top:50%;
+    top:60%;
     left:50%;
     transform:translate(-50%,-50%);
     color:white;
@@ -378,9 +383,15 @@ footer p {
 }
 /* CAROUSEL BUTTONS */
 
+.carousel-control-prev,
+.carousel-control-next {
+    top: 55%;
+    bottom: auto;
+    transform: translateY(-50%);
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon{
-    background-color:rgba(0,0,0,.35);
     padding:22px;
     border-radius:50%;
 }
@@ -393,7 +404,7 @@ footer p {
 }
 
 .carousel-indicators .active{
-    background:#D4A373;
+    background:#765738;
 }
 
 /* RESPONSIVE */

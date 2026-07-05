@@ -216,6 +216,18 @@ body {
     font-size:13px;
 }
 
+/* can remove this later if ada merch to add*/
+.menu-table td.empty-menu-box {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+.menu-table td.empty-menu-box:hover {
+    transform: none;
+}
+
 /* SOCIAL MEDIA*/
 
 #social-media{

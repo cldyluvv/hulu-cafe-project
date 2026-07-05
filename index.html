@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HULU CAFE</title>
-    <!--nanti letak logo dekat website tab-->
+    <title>Home | Hulu Cafe</title>
+    <!--nanti letak logo dekat website tab--> <!--KORANG MEMANG TAK BACA KE COMMENT AKU NI !!!-->
+    <link rel="icon" href="images/hulu-logo.webp" type="image/x-icon">
 
     <!--Bootstrap CSS--> <!--KALAU JUMPA ANOTHER BOOTSRAP CAN REPLACE-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,6 +14,7 @@
 
     <!--NANTI CREATE EXTERNAL CSS FILE-->
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -71,7 +73,6 @@
     <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"> 
     
     <!-- Indicators -->
-    
     <div class="carousel-indicators"> 
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button> 
@@ -89,34 +90,35 @@
         
     <div class="hero-content"> 
         
-    <h1>Welcome to Hulu Cafe</h1> 
-    <p> Experience premium matcha, handcrafted beverages, delicious meals and a cozy atmosphere. </p> 
-    
-    <a href="menu.html" class="btn btn-outline-light"> View Menu </a>
-    <a href="reservation.html" class="btn btn-outline-light"> Book Now </a> 
-    </div>
+        <h1 id="welcome-word">Welcome to Hulu Cafe</h1>
+        <p> Experience premium matcha, handcrafted beverages, delicious meals and a cozy atmosphere. </p> 
+        
+        <a href="menu.html" class="btn btn-outline-light"> View Menu </a>
+        <a href="reservation.html" class="btn btn-outline-light"> Book Now </a> 
+        </div>
+        </div> 
+        
+        <!-- Slide 2 --> 
+        
+        <div class="carousel-item" data-bs-interval="4000"> 
+            <img src="images/hero2.jpg" class="d-block w-100" alt=""> 
+        </div> 
+        
+        <!-- Slide 3 --> 
+        <div class="carousel-item" data-bs-interval="4000"> 
+            <img src="images/hero3.jpg" class="d-block w-100" alt=""> 
+        </div> 
+        
+        <!-- Slide 4 --> 
+        <div class="carousel-item" data-bs-interval="4000"> 
+            <img src="images/hero4.jpg" class="d-block w-100" alt=""> 
+        </div> 
+        
+        <!-- Slide 5 --> 
+        <div class="carousel-item" data-bs-interval="4000"> 
+            <img src="images/hero5.jpg" class="d-block w-100" alt=""> 
+        </div> 
     </div> 
-    
-    <!-- Slide 2 --> 
-    
-    <div class="carousel-item" data-bs-interval="4000"> 
-        <img src="images/hero2.jpg" class="d-block w-100" alt=""> 
-    </div> 
-    
-    <!-- Slide 3 --> 
-    <div class="carousel-item" data-bs-interval="4000"> 
-        <img src="images/hero3.jpg" class="d-block w-100" alt=""> 
-    </div> 
-    
-    <!-- Slide 4 --> 
-    <div class="carousel-item" data-bs-interval="4000"> 
-        <img src="images/hero4.jpg" class="d-block w-100" alt=""> 
-    </div> 
-    
-    <!-- Slide 5 --> 
-    <div class="carousel-item" data-bs-interval="4000"> 
-        <img src="images/hero5.jpg" class="d-block w-100" alt=""> 
-    </div> </div> 
     
     <!-- Previous --> 
     <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
