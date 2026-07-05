@@ -98,7 +98,7 @@ body {
 }
 
 .carousel-item{
-    height:90vh;
+    height:100vh;
     position:relative;
 }
 
@@ -254,7 +254,7 @@ section h2{
 }
 
 #promotion h2{
-    color:#F8E9D2;
+    color:#663f03;
 }
 
 #promotion img{
