@@ -306,3 +306,74 @@ footer p{
 }
 
 }
+
+/* =========================
+   SEARCH RESULT FIX (NO EDIT EXISTING CSS)
+========================= */
+
+#searchResult{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* CARD dalam search */
+#searchResult .search-card{
+    background:#fff;
+    border-radius:18px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+/* hover sama macam table */
+#searchResult .search-card:hover{
+    transform: translateY(-5px);
+}
+
+/* IMAGE fix size supaya tak lari */
+#searchResult img{
+    width: 170px;          /* SAMAKAN dengan table CSS kau */
+    height: 170px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* TITLE sama style */
+#searchResult h3{
+    font-size: 18px;
+    color: #3E2723;
+    margin-bottom: 10px;
+}
+
+/* PRICE text sama */
+#searchResult p{
+    color: #666;
+    font-weight: 500;
+}
+
+/* badge Cold/Hot sama style */
+#searchResult{
+    display: none;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    margin-top: 20px;
+    align-items: start;
+}
+
+#searchResult .search-card{
+    background: #fff;
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: .3s;
+
+    width: 100%;
+}
