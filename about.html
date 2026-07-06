@@ -27,11 +27,17 @@
                     <img src="images/hulu-logo.webp" alt="Hulu Cafe Logo" width="150">
                 </a>
 
-                <button class="navbar-toggler" type="button"
+                <!-- Burger button on the right -->
+                <button class="navbar-toggler ms-auto" type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#navbarMenu">
+                    data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
 
                 <div class="collapse navbar-collapse" id="navbarMenu">
 
@@ -76,8 +82,11 @@
     <div class="hero-overlay">
 
         <h5>GET TO KNOW US</h5>
-        <h1>About Hulu Cafe</h1>
-        <p>More than just coffee and matcha. We create memorable cafe experiences.</p>
+        <h1 id="about-hulu">About Hulu Cafe</h1>
+        <p>Hulu Cafe is a cozy modern café that brings together premium matcha drinks, freshly baked pastries, 
+            and comforting meals in a relaxing atmosphere. Every item on our menu is carefully prepared using 
+            high-quality ingredients to ensure the best taste in every bite and sip. Whether you are here to study, 
+            catch up with friends, or simply unwind, Hulu Cafe offers the perfect space for every moment.</p>
 
     </div>
 
