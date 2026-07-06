@@ -1,6 +1,46 @@
 const form = document.getElementById("feedbackForm");
 const reviewContainer = document.getElementById("reviewContainer");
 
+// Paparkan review yang disimpan dalam localStorage
+function loadReviews() {
+
+    let reviews = JSON.parse(localStorage.getItem("reviews")) || [];
+
+    reviews.forEach(item => {
+
+        let stars = "";
+
+        for (let i = 0; i < item.rating; i++) {
+            stars += "★";
+        }
+
+        for (let i = item.rating; i < 5; i++) {
+            stars += "☆";
+        }
+
+        reviewContainer.insertAdjacentHTML("beforeend", `
+            <div class="carousel-item">
+                <section class="review-box">
+
+                    <h3>${item.name}</h3>
+
+                    <p><strong>Branch:</strong> ${item.branch}</p>
+
+                    <p><strong>Rating:</strong> ${stars}</p>
+
+                    <p><strong>Review:</strong> ${item.review}</p>
+
+                </section>
+            </div>
+        `);
+
+    });
+
+}
+
+// Papar review yang disimpan bila page dibuka
+loadReviews();
+
 form.addEventListener("submit", function (e) {
 
     e.preventDefault();
@@ -20,50 +60,31 @@ form.addEventListener("submit", function (e) {
     // Popup berjaya submit
     alert("Feedback submitted successfully!");
 
-    // Paparkan review jika user benarkan
+    // Simpan review jika user benarkan dipaparkan
     if (displayReview) {
 
-        let stars = "";
+        const reviewData = {
+            name: name,
+            branch: branchText,
+            rating: rating,
+            review: review
+        };
 
-        for (let i = 0; i < rating; i++) {
-            stars += "★";
-        }
-
-        for (let i = rating; i < 5; i++) {
-            stars += "☆";
-        }
-
-        // Buang class active pada review lama
-        document.querySelectorAll(".carousel-item").forEach(item => {
-            item.classList.remove("active");
-        });
+        // Ambil review lama
+        let reviews = JSON.parse(localStorage.getItem("reviews")) || [];
 
         // Tambah review baru
-        reviewContainer.insertAdjacentHTML("beforeend", `
-            <div class="carousel-item active">
-                <section class="review-box">
+        reviews.push(reviewData);
 
-                    <h3>${name}</h3>
+        // Simpan ke localStorage
+        localStorage.setItem("reviews", JSON.stringify(reviews));
 
-                    <p><strong>Branch:</strong> ${branchText}</p>
-
-                    <p><strong>Rating:</strong> ${stars}</p>
-
-                    <p><strong>Review:</strong> ${review}</p>
-
-                </section>
-            </div>
-        `);
-
-        // Pergi ke review terbaru
-        const carousel = bootstrap.Carousel.getOrCreateInstance(
-            document.getElementById("reviewCarousel")
-        );
-
-        carousel.to(document.querySelectorAll(".carousel-item").length - 1);
     }
 
     // Reset form
     form.reset();
+
+    // Refresh page supaya review baru dipaparkan
+    location.reload();
 
 });
