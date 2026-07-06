@@ -75,6 +75,15 @@ body{
     padding:15px 0;
 }
 
+/* Fix burger button width */
+.navbar-toggler{
+    width: auto;
+    margin-bottom: 0;
+    padding: 6px 10px;
+    border: 2px solid #63615d;
+    border-radius: 6px;
+}
+
 /* ==========================
    BOOKING PAGE
 ========================== */
@@ -186,7 +195,7 @@ input[type=checkbox]{
    BUTTONS
 ========================== */
 
-button{
+#bookingForm button{
     padding:12px 28px;
     border:none;
     border-radius:30px;
@@ -303,8 +312,9 @@ footer p{
         padding:25px;
     }
 
-    button{
+    #bookingForm button{
         width:100%;
         margin-bottom:15px;
     }
+
 }

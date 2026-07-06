@@ -45,6 +45,7 @@ body {
 
 .navbar-collapse{
     justify-content:center;
+    display:flex;
 }
 
 .nav-link{
