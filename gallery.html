@@ -200,6 +200,10 @@
             <video autoplay muted loop playsinline controls>
                 <source src="images/Wimage/video-gallery.mp4" type="video/mp4">
             </video>
+            <audio id="bgMusic" autoplay loop muted>
+                <source src="music/PeriTune_Alleyway-chosic.com_.mp3" type="audio/mp3">
+            </audio>
+        <button id="muteBtn" onclick="toggleMute()">🔇 Unmute Music</button>
         </div>
 
     </section>
@@ -238,6 +242,22 @@
             </p>
         </div>
     </footer>
+
+    <!-- Mute / Unmute background music -->
+    <script>
+        function toggleMute() {
+            var audio = document.getElementById("bgMusic");
+            var btn = document.getElementById("muteBtn");
+
+            if (audio.muted) {
+                audio.muted = false;
+                btn.textContent = "🔊 Mute Music";
+            } else {
+                audio.muted = true;
+                btn.textContent = "🔇 Unmute Music";
+            }
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/gallery.js"></script>
 

@@ -454,6 +454,22 @@ main {
     object-position:center;
 }
 
+#muteBtn {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+#muteBtn:hover {
+    background: rgba(255, 255, 255, 0);
+}
+
 
 /* SOCIAL MEDIA */
 #social-media{
