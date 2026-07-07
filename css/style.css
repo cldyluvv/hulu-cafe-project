@@ -384,6 +384,49 @@ footer p {
     background:#765738;
 }
 
+/* MUSIC BUTTON */
+.music-btn{
+    position: fixed;
+    top: 160px;          /* below navbar */
+    right: 20px;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(64,40,4,0.9);
+    color: #fff;
+
+    font-size: 24px;
+    cursor: pointer;
+
+    z-index: 99999;      /* higher than navbar */
+    transition: all .3s ease;
+}
+
+.music-btn:hover{
+    background:#9b7b45;
+    transform:scale(1.1);
+    box-shadow:0 0 18px rgba(216,195,165,.8);
+}
+
+/* Click effect */
+.music-btn:active{
+    transform: scale(.95);
+}
+
+/* Rotate icon slightly on hover */
+.music-btn:hover i{
+    transform: rotate(15deg);
+    transition: .3s;
+}
+
 /* RESPONSIVE */
 
 @media (max-width:768px){
@@ -408,4 +451,8 @@ footer p {
     width:120px;
 }
 
+
+
+
 }
+
